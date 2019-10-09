@@ -9,7 +9,7 @@ if(! $conn )
     die('连接失败: ' . mysqli_error($conn));
 }
 echo '连接成功<br />';
-$sql = 'SELECT * FROM `test`  ';
+$sql = 'SELECT username FROM `test` WHERE `id` = 6 ';
 $retval = mysqli_query( $conn, $sql );
 
 if(! $retval )
