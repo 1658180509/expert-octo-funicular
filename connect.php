@@ -1,8 +1,4 @@
 <?php
-$dbhost = 'localhost:3306';  // mysql服务器主机地址
-$dbuser = 'root';            // mysql用户名
-$dbpass = '123456';          // mysql用户名密码
-$dbname="test";
 $conn = @new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 if(! $conn )
 {
